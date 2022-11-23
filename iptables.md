@@ -1,3 +1,4 @@
+```bash
 export HOST_IP="10.100.255.2"
 export HOST_NET="10.100.255.0/24"
 
@@ -52,3 +53,4 @@ COMMIT
 -A POSTROUTING -s ${VPN_AAA_NET} ! -d ${VPN_AAA_NET} -j SNAT --to-source ${HOST_IP}
 COMMIT
 EndOfMessage
+```
